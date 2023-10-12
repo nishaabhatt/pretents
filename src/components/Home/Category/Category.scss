@@ -1,0 +1,66 @@
+// @import "../../../css-config/mixins.scss";
+
+// .shop-by-category {
+//     margin: 25px 0;
+//     @include md {
+//         margin: 50px 0;
+//     }
+//     .categories {
+//         display: flex;
+//          flex-flow: wrap;
+//         gap: 10px;
+//         .category {
+//             background-color: black;
+//             width: calc(50% - 5px);
+//             cursor: pointer;
+//             overflow: hidden;
+//             @include md {
+//                 width: calc(25% - 10px);
+//             }
+//             img {
+//                 width: 100%;
+//                 display: block;
+//                 max-height: 180px; 
+//                 transition: all ease 0.3s;
+//             }
+//             &:hover {
+//                 img {
+//                     transform: scale(1.2);
+//                 }
+//             }
+//         }
+//     }
+// }
+@import "../../../css-config/mixins.scss";
+
+.shop-by-category {
+    margin: 25px 0;
+    @include md {
+        margin: 50px 0;
+    }
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .category {
+            background-color: black;
+            width: calc(20% - 10px); /* Set to 20% for 5 items in a row */
+            cursor: pointer;
+            overflow: hidden;
+            @include md {
+                width: calc(20% - 10px); /* Set to 20% for 5 items in a row on larger screens */
+            }
+            img {
+                width: 100%;
+                display: block;
+                max-height: 150px;
+                transition: all ease 0.3s;
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
